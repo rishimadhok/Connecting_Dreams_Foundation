@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/cdfvision"
+        card_view:contentPadding="4dp"
+        card_view:theme="@style/AppTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5d7d7d7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="OUR VISION"
+                android:textSize="30sp"
+                android:textColor="@color/c_graph_bg_black"
+                android:textStyle="bold"
+                android:id="@+id/textView6"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Connecting Dreams aims to Empower youth and women in rural India through connectivity and entrepreneurship."
+                android:id="@+id/textView7"
+                android:gravity="center|bottom"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/cv_image_slider"
+        card_view:contentPadding="4dp"
+        android:layout_below="@+id/cdfvision"
+        card_view:theme="@style/AppTheme">
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        custom:selected_color="#0095BF"
+        custom:unselected_color="#55333333"
+        custom:selected_drawable="@drawable/bird"
+        custom:shape="oval"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        custom:selected_width="6dp"
+        custom:selected_height="6dp"
+        custom:unselected_width="6dp"
+        custom:unselected_height="6dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        custom:pager_animation="Accordion"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation_span="1100"
+        android:layout_height="250dp"
+        android:layout_below="@+id/cdfvision"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/cv_social_buttons"
+        card_view:contentPadding="4dp"
+        android:layout_below="@+id/cdfvision"
+        card_view:theme="@style/AppTheme">
+
+    <LinearLayout
+        android:layout_below="@+id/cv_image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <in.championswimmer.libsocialbuttons.fabs.FABFacebook
+            android:layout_width="50dp"
+            android:id="@+id/fb"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_height="60dp" />
+        <in.championswimmer.libsocialbuttons.fabs.FABTwitter
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:id="@+id/twitter"
+            android:layout_marginRight="10dp"
+            android:layout_height="60dp" />
+        <in.championswimmer.libsocialbuttons.fabs.FABYoutube
+            android:layout_width="50dp"
+            android:id="@+id/you"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_height="60dp" />
+        <in.championswimmer.libsocialbuttons.fabs.FABGoogleplus
+            android:layout_width="50dp"
+            android:id="@+id/google"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_height="60dp" />
+        <in.championswimmer.libsocialbuttons.fabs.FABLinkedin
+            android:layout_width="50dp"
+            android:id="@+id/linkedin"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

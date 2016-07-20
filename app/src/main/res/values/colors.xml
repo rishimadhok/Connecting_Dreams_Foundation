@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Tomato">#ec2d01</color>
+    <color name="Peacock">#1E90FF</color>
+    <color name="Grape">#ff6f2da8</color>
+    <color name="Tangerine">#ffcc00</color>
+    <color name="Pink">#FF82AB</color>
+    <color name="Lavender">#b378d3</color>
+    <color name="list_item_normal">#ffffff</color>
+    <color name="list_item_pressed">#f5f5f5</color>
+
+    <color name="lighter_green">#29d74b</color>
+    <color name="white">#ffffff</color>
+    <color name="Green">#1DA237</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
+    <color name="Red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="bg_light">#F4F4F4</color>
+    <color name="bg_dark">#d7d7d7</color>
+    <color name="action_bar_seprator">#52cce3</color>
+    <color name="text_blue">#0470b8</color>
+    <color name="text_red">#bc3b1c</color>
+    <color name="text_grey">#707070</color>
+    <color name="teal_color">#16a6b1</color>
+    <color name="teal_light_color">#a316a6b1</color>
+    <color name="teal_pressed">#00a4b0</color>
+    <color name="static_text_color">#666666</color>
+    <color name="blue">#0039A7</color>
+    <color name="blue_text">#0090ff</color>
+    <color name="blue_pressed">#0065b8</color>
+    <color name="buy_now_normal">#F16900</color>
+    <color name="buy_now_selected">#c26700</color>
+    <color name="line_color">#ededed</color>
+    <color name="view_more_color">#656565</color>
+    <color name="grey_bg">#eeeeee</color>
+    <color name="light_header">#b1b1b1</color>
+    <color name="dark_header">#202020</color>
+    <color name="nukkad_header">#fb9608</color>
+    <color name="arrow_down_spinner">#2174B7</color>
+    <color name="spinner_header_color">#91dded</color>
+
+    <color name="GREEN">#50C25F</color>
+
+    <color name="actionbar_text">#FFFFFF</color>
+    <color name="promotion_line_grey">#CCCCCC</color>
+    <color name="blk_disc_tab_header">#e8eff8</color>
+    <color name="timer_bg">#6f6f4d</color>
+
+    <color name="gray_4">#f7f8f3</color>
+    <color name="line">#c5c6c1</color>
+    <color name="stroke_color">#e6e7e2</color>
+    <color name="recently_view_band">#302e2f</color>
+    <color name="stroke_nukkad">#fb9606</color>
+    <color name="recommendation_band">#00aab4</color>
+
+    <color name="red">#990000</color>
+    <color name="green">#009900</color>
+    <color name="orange">#FF9900</color>
+
+    <color name="gray_search_icon">#B6B6B6</color>
+    <color name="textShadow">#FFF</color>
+    <color name="text_hairline">#ffcccccc</color>
+    <!-- 	<color name="orange">#FF6600</color> -->
+
+    <color name="clr_user_chat_bubble_bg">#51ccdc</color>
+    <color name="clr_chat_list_item_bg">#f7f7f5</color>
+    <color name="clr_chat_grey">#838486</color>
+    <color name="clr_brown">#A52A2A</color>
+    <color name="clr_violet">#8A2BE2</color>
+    <color name="clr_purple">#800080</color>
+    <color name="clr_pomegranate">#BE3E25</color>
+    <color name="clr_navy">#000080</color>
+    <color name="clr_yellow">#FFFF00</color>
+    <color name="clr_dark_green">#006400</color>
+    <color name="clr_midnight_blue">#2D3E52</color>
+    <color name="toolbar_bg">#363D46</color>
+    <color name="help_popup">#3598db</color>
+    <color name="bg_toolbar_light">#EFEFEF</color>
+
+
+    <!--color define by vivek-->
+    <color name="hint_color">#A6A6A6</color>
+    <color name="btn_color_orange">#eb7f00</color>
+    <color name="btn_border_color">#02aed2</color>
+    <color name="btn_color_blue">#02aed2</color>
+    <color name="btn_color_red_variant">#cc3300</color>
+    <color name="color_payment_success">#5ac55f</color>
+    <color name="color_payment_fail">#f44336</color>
+    <color name="color_payment_btn">#18a6b2</color>
+    <color name="color_error_message">#db0505</color>
+    <color name="color_info_message">#0cdb05</color>
+    <color name="color_warning_message">#dbdb05</color>
+    <color name="color_notice_message">#000000</color>
+
+    <color name="tabcolor">#222222</color>
+    <color name="color_brandname">#2174b7</color>
+    <color name="listprice_color">#6f6f6f</color>
+    <color name="price_color">#6f6f6f</color>
+    <color name="thirdprice_color">#b03e16</color>
+
+    <!--color define for new Login and Registration-->
+    <color name="hint_text_color">#a8a8a8</color>
+    <color name="gray">#dddddd</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="theme_color">#e98244</color>
+</resources>

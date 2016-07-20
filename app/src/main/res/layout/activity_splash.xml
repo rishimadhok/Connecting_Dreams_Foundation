@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Activities.SplashActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.hanks.htextview.HTextView
+        android:id="@+id/cooltext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        htext:animateType="scale"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:contextClickable="false"/>
+
+</LinearLayout>

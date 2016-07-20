@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            card_view:cardBackgroundColor="@color/theme_color"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="1dp"
+            android:id="@+id/cdfvision"
+            card_view:contentPadding="4dp"
+            card_view:theme="@style/AppTheme">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_bottom_margin"
+            android:text="@string/emailpassword_title_text"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.MyTitleText" />
+
+                <com.github.jorgecastillo.FillableLoader
+                    android:id="@+id/fillableLoader_login"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    app:fl_originalWidth="900"
+                    app:fl_originalHeight="600"
+                    app:fl_strokeColor="#FFFFFF"
+                    app:fl_fillColor="#610729"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:fl_strokeWidth="2dp"
+                    app:fl_strokeDrawingDuration="5000"
+                    app:fl_fillDuration="5000"
+                    app:fl_clippingTransform="waves" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/icon"-->
+                    <!--style="@style/ThemeOverlay.FirebaseIcon"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:contentDescription="@string/desc_firebase_lockup"-->
+                    <!--android:src="@drawable/connecting_dream_logo" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/status"-->
+            <!--style="@style/ThemeOverlay.MyTextDetail"-->
+            <!--android:text="@string/signed_out" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/detail"-->
+            <!--style="@style/ThemeOverlay.MyTextDetail"-->
+            <!--tools:text="User ID: 123456789abc" />-->
+
+            </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/email_password_fields"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <EditText
+                android:id="@+id/field_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/field_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_password_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_password_fields"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                android:text="@string/sign_in"
+                android:background="@drawable/bg_btn_blue"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+            <Button
+                android:id="@+id/email_create_account_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:text="@string/register"
+                android:background="@drawable/bg_btn_blue"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sign_out"
+            android:background="@drawable/bg_btn_blue"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

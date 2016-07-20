@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.AboutUs"
+    tools:showIn="@layout/activity_about_us">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.jorgecastillo.FillableLoader
+            android:id="@+id/fillableLoader_about"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            app:fl_originalWidth="900"
+            app:fl_originalHeight="600"
+            app:fl_strokeColor="#FFFFFF"
+            app:fl_fillColor="#610729"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:fl_strokeWidth="2dp"
+            app:fl_strokeDrawingDuration="5000"
+            app:fl_fillDuration="5000"
+            app:fl_clippingTransform="waves" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/about_us" />
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
